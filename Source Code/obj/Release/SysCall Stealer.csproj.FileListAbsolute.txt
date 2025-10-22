@@ -1,0 +1,32 @@
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.exe.config
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.exe
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.pdb
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.AssemblyReference.cache
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.BuilderPage.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.BypassPage.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.FollowForm1Blur.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.MainPage.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.SettingsPage.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.syscallmain.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.Properties.Resources.resources
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.GenerateResource.cache
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.CoreCompileInputs.cache
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall .31F215B1.Up2Date
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.exe
+C:\Users\sulum\source\repos\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.pdb
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.exe.config
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.exe
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\bin\Release\SysCall Stealer.pdb
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.AssemblyReference.cache
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.BypassPage.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.FollowForm1Blur.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.MainPage.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.SettingsPage.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.syscallmain.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall_Stealer.Properties.Resources.resources
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.GenerateResource.cache
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.CoreCompileInputs.cache
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.exe
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.pdb
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.Fody.CopyLocal.cache
+C:\Users\sulum\source\repos\SysCallStealerStub\SysCall Stealer\SysCall Stealer\obj\Release\SysCall Stealer.csproj.Fody.RuntimeCopyLocal.cache

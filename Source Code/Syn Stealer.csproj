@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.6.0.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.6.0.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83EAAD44-02E0-4E89-BA82-924ABBB85225}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SysCall_Stealer</RootNamespace>
+    <AssemblyName>Syn Stealer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gt%400.75x.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.6.0.0\lib\netstandard2.0\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\Guna_UI_Framework_Ultimate-main\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.10\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.10\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.9.0.10\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.9.0.10\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Builder.Designer.cs">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BypassPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BypassPage.Designer.cs">
+      <DependentUpon>BypassPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FollowForm1Blur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FollowForm1Blur.Designer.cs">
+      <DependentUpon>FollowForm1Blur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logs.Designer.cs">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModernScrollbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunOnceHover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunOnceHover.Designer.cs">
+      <DependentUpon>RunOnceHover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sevgi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SilentHover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SilentHover.Designer.cs">
+      <DependentUpon>SilentHover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupHover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupHover.Designer.cs">
+      <DependentUpon>StartupHover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="syscallmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="syscallmain.Designer.cs">
+      <DependentUpon>syscallmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Builder.resx">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BypassPage.resx">
+      <DependentUpon>BypassPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FollowForm1Blur.resx">
+      <DependentUpon>FollowForm1Blur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs.resx">
+      <DependentUpon>Logs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunOnceHover.resx">
+      <DependentUpon>RunOnceHover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPage.resx">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SilentHover.resx">
+      <DependentUpon>SilentHover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupHover.resx">
+      <DependentUpon>StartupHover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="syscallmain.resx">
+      <DependentUpon>syscallmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipeline_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipeline_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_left_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double_tap_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circled_menu_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort_left_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbrella_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discord_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telegram_app_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filezilla_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipeline_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_layout_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_layout_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tap_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbrella_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insect_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_layout_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_layout_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_layout_48px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insect_481px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbrella_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tap_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-4%401.5x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\son%401.5x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\son2%401.25x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zzz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kcc%400.5x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gt%400.75x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\SysCallStealerStub.exe" />
+    <None Include="Resources\security_configuration_48px.png" />
+    <None Include="Resources\outgoing_data_48px.png" />
+    <None Include="Resources\telegram_app_48px1.png" />
+    <None Include="Resources\discord_48px1.png" />
+    <None Include="Resources\disclaimer_48px.png" />
+    <None Include="Resources\kafa%400.75x.png" />
+    <None Include="Resources\gr%400.75x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gt%400.75x.ico" />
+    <Content Include="icon.ico" />
+    <Content Include="kafa%400.75x.ico" />
+    <None Include="Resources\ffaf.png" />
+    <None Include="Resources\wi-fi_26px.png" />
+    <None Include="Resources\settings_26px.png" />
+    <None Include="Resources\administrative_tools_26px.png" />
+    <None Include="Resources\vision_26px.png" />
+    <None Include="Resources\rocket_26px.png" />
+    <None Include="Resources\safety_care_26px.png" />
+    <None Include="Resources\SynStub.exe" />
+    <None Include="Resources\people_48px.png" />
+    <Content Include="son%401.5x.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.8.2\build\Fody.targets" Condition="Exists('..\packages\Fody.6.8.2\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.8.2\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.8.2\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.6.0.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.6.0.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.6.0.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.6.0.0\build\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.6.0.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.6.0.0\build\Costura.Fody.targets')" />
+</Project>
