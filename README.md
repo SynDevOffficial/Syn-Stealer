@@ -8,7 +8,7 @@ Syn Stealer Is Advanced Stealer That Grabs Wallets, Passwords, Blq Blq, And Send
 
 > **Note:** _This Software is Only For Educational Purposes.
 
-## Features ![4dac1664-b36b-4000-9fe0-0ecf25323bfd-1](https://github.com/user-attachments/assets/64848a3b-cf44-4f7f-8335-db08d23e385c)
+## Features 
 
 
 
